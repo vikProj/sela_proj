@@ -1,8 +1,10 @@
 import re
 import sys
 
+from typing import List
 
-def validate_password(psw: str) -> (bool, list[str]):
+
+def validate_password(psw: str) -> (bool, List[str]):
     """
     The method validates provided password, return True/False and list of messages if case of invalid password. \n
     Password validation rules: \n
@@ -11,6 +13,7 @@ def validate_password(psw: str) -> (bool, list[str]):
         *2. Contain both alphabet and number. \n
         *3. Include both the small and capital case letters. \n
 
+    :return:
     :param psw: str - Provided password
     :return: tuple of:
         1. flag - True/False for Valid/Invalid password.
